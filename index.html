@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Project1</title>
+    <link rel="stylesheet" href="project1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+    <style>
+      ul li{
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Start  navbar  -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: orangered; ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+         <h2 style="font-family: elephant;">ADITYA</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Client</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Web Development</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">App Development</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Freelancing</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Cloud Computing</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">SEO</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- slider start -->
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHdlYnNpdGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="..."  height="400px">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Web Development</h5>
+            <p>Web Develop Technology is very popular in the real world and all people wants to learn new skill like Web Development. <br> Under web Development comes FRONT-END and BACK-END Development and both combination
+              are FULL-STACK Web Development.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1595675024853-0f3ec9098ac7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" class="d-block w-100" alt="..."  height="400px">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>App Development</h5>
+            <p>App Development is very popular in the today world and all IT student's want to learn App Development<br> and Develop own skill and get job in dream company.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1690896494600-c17834a69ec9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" class="d-block w-100" alt="..." height="400px">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Internship</h5>
+            <p>Internship is the most popular in the real age to develop skill and learn new skill <br>
+              get experience certificate and work with reputed company.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- container start main section -->
+
+    <div class="container-fluid">
+
+      <!-- tagline start -->
+
+      <div class="row">
+        <div class="col-12">
+          <h3 class="display-6 text-center mt-5 mb-3">
+            Web design is the planning and creation of websites and  web development involves the creation and maintenance of websites. 
+          </h3>
+        </div>
+      </div>
+
+      <!-- featur new row -->
+
+      <div class="row justify-content-evenly pt-3 pb-3">
+        <div class="col-md-3 text-center mt-5">
+
+          <h1>
+            <i class="bi bi-file-code-fill text-primary"></i>
+            <h5>Built for Developer</h5>
+            <p>
+              A developer is the key individual behind all software applications. Generally, developers are well versed in at least one programming language and proficient in the art of structuring and developing software code for software or a program.
+            </p>
+          </h1>
+
+        </div>
+        <div class="col-md-3 text-center mt-5">
+
+          <h1>
+            <i class="bi bi-easel-fill text-danger"></i>
+            <h5>Built for Designer</h5>
+            <p>
+              Creative designer is a broad term that describes designers who work with a variety of different mediums in several different industries, including but not limited to graphic design. As a graphic designer, you can do this.
+            </p>
+            <h5>
+
+            </h5>
+          </h1>
+
+        </div>
+        <div class="col-md-3 text-center mt-5">
+
+          <h1>
+            <i class="bi bi-calendar-range-fill text-success"></i>
+            <h5>Built for Freelancer</h5>
+            <p>
+              A  freelancer is one that is available for hire. As a freelancer, you work as an independent contractor that gets paid for every job you execute. You are not too obligated to your clients, and what you do is solely your decision. 
+            </p>
+          </h1>
+
+        </div>
+      </div>
+
+      <!-- line -->
+
+      <hr size="">
+
+      <!-- growth -->
+
+      <div class="row justify-content-evenly pt-3 pb-5">
+        <div class="col-md-5 pt-3">
+          <img src="https://tse4.mm.bing.net/th?id=OIP.21NLXwcqibLJJjzdWM2IagHaFj&pid=Api&P=0&h=180" alt="work only internset" class="img-fluid" width="100%" height="100vh">
+        </div>
+        <div class="col-md-5  pt-3">
+          <h5 class="mt-3">Website Development</h5>
+          <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-success" style="width: 80%">80%</div>
+          </div>
+
+          <h5 class="mt-3">App Development</h5>
+          <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-info text-dark" style="width: 50%">50%</div>
+          </div>
+
+          <h5 class="mt-3">Freelancing</h5>
+          <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-primary text-dark" style="width: 60%">60%</div>
+          </div>
+
+
+          <h5 class="mt-3">Software Development</h5>
+          <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-warning text-dark" style="width: 70%">70%</div>
+          </div>
+          
+          <h5 class="mt-3">Cloud Computing</h5>
+          <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-danger" style="width: 45%">45%</div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Contact -->
+
+      <div class="row justify-content-evenly pt-2 pb-5" style="background-color: bisque;">
+        <div class="col-md-5 mt-5">
+          <h3 class="mb-4">Contact Form</h3>
+
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            
+            <div class="mb-3 was-validated">
+              <label for="validationTextarea" class="form-label">Message</label>
+              <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+            </div>
+
+            
+            <button type="submit" class="btn btn-danger">Submit</button>
+          </form>
+
+        </div>
+
+        <div class="col-md-5 mt-5">
+
+          <h3 class="mmb-4">Address</h3>
+          <p>
+            Durasan, Buxar (Bihar) <br>
+            pin code - 802120 <br>
+            <i class="bi bi-telephone"></i> : +91 9508549987
+          </p>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7195.717283726243!2d84.1696715384055!3d25
+          .60961308466424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3992793a7be3c4c1%3A0xfcc4e7f7da841e18!2sDu
+          rasan%2C%20Bihar%20802120!5e0!3m2!1sen!2sin!4v1691255191362!5m2!1sen!2sin" height="280px"
+           style="border:1px; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+      </div>
+
+
+        <!-- FAQ -->
+
+        <div class="row justify-content-evenly pt-5 pb-5">
+          <div class="col-md-10">
+            <h3 class="text-center pb-4">FAQ</h3>
+
+            <!-- accordian -->
+
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Why Web Design and Development ?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Web development is a fast-paced, challenging career centered on creative problem-solving and continuous innovation.
+                  As a web developer you’ll work with a multidisciplinary team of designers, other developers, and marketers to realize your projects.
+                  While many web developers come from a more analytical or technical background, we have found that anyone can become a web developer if they apply themselves. For example, we have many successful graduates
+                   who used to work in marketing, sales, teaching, customer service, finance, architecture, HR, and IT.
+                   The technology industry moves quickly, and web developers are constantly learning and advancing in their careers.
+                   There is practically no limit to how much you can improve your skills and progress in your career as a web developer.  
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Why App Development ?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    This makes mobile app development – the process of developing application software for mobile devices - a lucrative
+                     and expansive field. However, while people need mobile apps, it's not just a matter of learning how to code and calling it a day. Anyone with an 
+                    internet connection can go to a free coding website. Standards for mobile developers are much higher.
+                    The beauty of using app software is that it automates many of the development processes, from coding to 
+                    connectivity, cutting work that might take days/weeks/months into significantly shorter turnarounds.
+                    Most app development platforms offer built-in security, but you’ll want to make sure it covers your business 
+                    and app requirements—especially for mobile app and device management. Security features you may want to 
+                    look for include advanced identity management, user rights management, and secure encryption.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Why should We do Internship ?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Gaining industry experience has significant benefits, whether you're in high school, college or entering the
+                    workforce. Completing an internship is often an effective way to encourage your professional growth, and there 
+                    are often some available based on your education level and desired career path. Learning what makes
+                    internships beneficial may help you better understand the professional impact they may have.
+                    An internship is important because it can present you with new skills and opportunities that you may not receive
+                    otherwise. Interns gain technical knowledge within the industry of their choice by working directly with professionals in that field.This allows you to apply practical knowledge you may have learned from a classroom setting while you develop important soft skills,
+                    such as time management, organization, adaptability, problem-solving and teamwork.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- Footer start  -->
+
+        <div class="row justify-content-evenly bg-dark text-white pt-2 pb-5">
+          <div class="col-md-3 pt-4">
+
+          <h5 class="pb-2">ADITYA RAY</h5>  
+          <p>
+            I am Aditya Kumar Ray from Durasan, Buxar(Bihar). Presently, I'm pursuing B.Sc IT from CIMAGE GROUP
+            OF INSTITUTIONS, PATNA and I'm 2nd year student and I got 7.3 CGPA in 1st year examination. Firstly,
+            I am learning Web Development and Designing Skill after that I'll learn Cloud Computing and other 
+            programming language like C, C++, JAVA, PYTHON,...etc. 
+          </p>
+
+          </div>
+          <div class="col-md-3 pt-4">
+
+            <h5 class="pb-2">Important Links</h5>
+
+            <p>
+              <a href="#" class="link-light text-decoration-none">Home</a> <br>
+              <a href="#" class="link-light text-decoration-none">About Us</a> <br>
+              <a href="#" class="link-light text-decoration-none">Contact Us</a> <br>
+              <a href="#" class="link-light text-decoration-none">Our Team</a> <br>
+              <a href="#" class="link-light text-decoration-none">Our Clients</a> <br>
+              <a href="#" class="link-light text-decoration-none">Projects</a> <br>
+              <a href="#" class="link-light text-decoration-none">Company</a> <br>
+              <a href="#" class="link-light text-decoration-none">College</a> <br>
+            </p>
+
+          </div>
+          <div class="col-md-3 pt-4">
+
+            <h5 class="pb-2">Contact Us</h5>
+            <p>
+              Durasan, Buxar (Bihar) <br>
+              pin code - 802120 <br>
+              <i class="bi bi-telephone"></i> : +91 9508549987
+            </p>
+
+          </div>
+        </div>
+
+
+        <!-- copyright -->
+
+        <div class="row bg-secondary text-white text-center p-2">
+          <div class="col-12">
+            <p>
+              Copyright 1999-2023 by ADITYA KUMAR RAY. All Right Reserved.
+            </p>
+          </div>
+        </div>
+
+
+      <!-- container end  -->
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
